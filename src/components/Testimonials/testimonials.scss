@@ -1,0 +1,74 @@
+.testimonials {
+    display: flex;
+    padding: 2rem;
+    position: relative;
+    .testimonials__left {
+        h3 {
+            color: var(--orange);
+            text-transform: uppercase;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            &:nth-of-type(2) {
+                color: white;
+            }
+        }
+        .testimonials__quote {
+            color: white;
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 40px;
+            max-width: 700px;
+        }
+        .testimonials__name {
+            color: white;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.04rem;
+            line-height: 50px;
+        }
+    }
+    .testimonials__right {
+        // position: relative;
+        .border-bg {
+            position: absolute;
+            border: 3px solid orange;
+            width: 19rem;
+            height: 22rem;
+            background: transparent;
+            right: 12rem;
+            top: 5rem;
+        }
+        .bg {
+            position: absolute;
+            background: var(--planCard);
+            top: 7.5rem;
+            right: 10rem;
+            width: 19rem;
+            height: 22rem;
+        }
+        .testimonials__img {
+            position: absolute;
+            width: 19rem;
+            height: 22rem;
+            object-fit: cover;
+            right: 11rem;
+            top: 6.3rem;
+        }
+        .testimonials__arrows {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            right: 38rem;
+            bottom: 5rem;
+            img {
+                cursor: pointer;
+                width: 2rem;
+            }
+        }
+    }
+}

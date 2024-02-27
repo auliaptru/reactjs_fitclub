@@ -1,0 +1,89 @@
+.plans {
+    padding: 0.5rem 2rem;
+    position: relative;
+    .bg-blur-1 {
+        position: absolute;
+        width: 32rem;
+        height: 23rem;
+        left: 0;
+        top: 6rem;
+    }
+    .bg-blur-2 {
+        width: 32rem;
+        height: 23rem;
+        right: 0;
+        top: 10rem;
+    }
+    .title__header {
+        gap: 2rem;
+    }
+    .plans__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 3rem;
+        .plan__card {
+            background: var(--caloryCard);
+            color: white;
+            padding: 1.5rem;
+            width: 15rem;
+            &:nth-child(2) {
+                background: linear-gradient(
+                    210.41deg,
+                    #fa5042 1.14%,
+                    #ffa739 100.75%
+                );
+                transform: scale(1.1);
+                svg {
+                    fill: white;
+                }
+                .plan__join-now {
+                    color: var(--orange);
+                }
+            }
+            svg {
+                fill: var(--orange);
+                width: 2rem;
+                height: 2rem;
+            }
+            h3 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: white;
+            }
+            h1 {
+                font-size: 3rem;
+                margin: 0;
+                padding: 0 0 20px 0;
+            }
+            .plan__features {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .plan__feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    img {
+                        width: 1rem;
+                    }
+                }
+            }
+            .plan__see-more {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                padding: 10px 0;
+            }
+            .plan__join-now {
+                padding: 10px 0;
+                color: black;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+                letter-spacing: 0.02rem;
+            }
+        }
+    }
+}
